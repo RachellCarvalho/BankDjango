@@ -4,7 +4,7 @@ from django.db import models
 
 class Customer(models.Model):
     name = models.CharField(max_length=122)
-    email = models.CharField(max_length=255)
+    email = models.CharField(max_length=255,null=True)
     phone = models.IntegerField()
     customer_id = models.IntegerField()
     transaction_date = models.DateField()
@@ -16,8 +16,10 @@ class Customer(models.Model):
 class Transaction(models.Model):
     sname = models.CharField(max_length=122)
     rname = models.CharField(max_length=122)
-    money=models.IntegerField()
+    money= models.IntegerField()
     tdate = models.DateTimeField()
+    email = models.ForeignKey(Customer,on_delete=models.CASCADE,null=True)
+
 
     def __str__(self):
         return self.sname
