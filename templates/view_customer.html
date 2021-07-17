@@ -41,7 +41,7 @@
     <div class="card mb-3 mt-2 w-60 shadow-lg p-2 mb-5 bg-white rounded">
     <form method="post" class="text-center">
         {% csrf_token %}
-        <label for="bookname" class="form-label  mt-4 h3"><b>Select customer to View details </b></label></br>
+        <label for="bookname" class="form-label  mt-4 h3"><b>Select customer to View details </b></label><br></br>
         <select class="form-select  mt-5 " aria-label="Default select example" id="name" name="name">
             {% for c in vc %}
              <option value="" disabled selected hidden>--------Select Name--------</option>
@@ -49,7 +49,7 @@
             {% endfor %}
         </select>
 
-      </br><button type="submit" class="btn btn-primary btn-lg btn-block mt-3 mb-5">View</button>
+      <br></br><button type="submit" class="btn btn-primary btn-lg btn-block mt-3 mb-5">View</button>
 
 
     </form>
@@ -57,11 +57,11 @@
     <div class="container " style="font-size: 20px; font-weight:normal">
     {%if cv%}
 
-    <label class="form-label  mt-1 "><b>Customer ID :</b>{{ cv.customer_id }}</label></br>
-    <label class="form-label  mt-1 "><b>Name : </b>{{ cv.name }}</label></br>
-    <label class="form-label  mt-1 "><b>Phone Number : </b>{{ cv.phone }}</label></br>
-    <label class="form-label  mt-1 "><b>Email ID : </b>{{ cv.email }}</label></br>
-    <label class="form-label  mt-1 "><b>Amount : </b></label>{{ cv.amount }}</br>
+    <label class="form-label  mt-1 "><b>Customer ID :</b>{{ cv.customer_id }}</label><br></br>
+    <label class="form-label  mt-1 "><b>Name : </b>{{ cv.name }}</label><br></br>
+    <label class="form-label  mt-1 "><b>Phone Number : </b>{{ cv.phone }}</label><br></br>
+    <label class="form-label  mt-1 "><b>Email ID : </b>{{ cv.email }}</label><br></br>
+    <label class="form-label  mt-1 "><b>Amount : </b></label>{{ cv.amount }}<br></br>
 
         {% endif %}
 
