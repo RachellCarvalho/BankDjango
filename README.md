@@ -30,9 +30,3 @@ PostgreSQL
 Home Page > View all Customers > Select and View one
 Customer > Transfer Money > Select customer to transfer to >
 View all Customers
-
-# Github link
-https://github.com/RachellCarvalho/BankDjango/
-
-# Website link
-https://banksr.herokuapp.com/
