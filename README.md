@@ -5,8 +5,7 @@ A simple dynamic website used for transfer of money between multiple users. The 
 Customers table will have basic fields such as name, email,
 current balance etc. Transfers table will record all transfers
 happened.
-# FRONT 
-END
+# FRONTEND
 
 HTML
 
@@ -16,7 +15,7 @@ JavaScript
 
 Bootstrap
 
-# BACK END
+# BACKEND
 Python
 
 Django Framework
@@ -32,3 +31,8 @@ Home Page > View all Customers > Select and View one
 Customer > Transfer Money > Select customer to transfer to >
 View all Customers
 
+# Github link
+https://github.com/RachellCarvalho/BankDjango/
+
+# Website link
+https://banksr.herokuapp.com/
